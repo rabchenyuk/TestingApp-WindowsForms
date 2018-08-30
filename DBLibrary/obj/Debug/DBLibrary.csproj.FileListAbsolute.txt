@@ -1,0 +1,19 @@
+c:\users\user\documents\visual studio 2017\Projects\TestingApp\DBLibrary\bin\Debug\DBLibrary.dll.config
+c:\users\user\documents\visual studio 2017\Projects\TestingApp\DBLibrary\bin\Debug\DBLibrary.dll
+c:\users\user\documents\visual studio 2017\Projects\TestingApp\DBLibrary\bin\Debug\DBLibrary.pdb
+c:\users\user\documents\visual studio 2017\Projects\TestingApp\DBLibrary\bin\Debug\EntityFramework.dll
+c:\users\user\documents\visual studio 2017\Projects\TestingApp\DBLibrary\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\user\documents\visual studio 2017\Projects\TestingApp\DBLibrary\bin\Debug\EntityFramework.xml
+c:\users\user\documents\visual studio 2017\Projects\TestingApp\DBLibrary\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\user\documents\visual studio 2017\Projects\TestingApp\DBLibrary\obj\Debug\DBLibrary.dll
+c:\users\user\documents\visual studio 2017\Projects\TestingApp\DBLibrary\obj\Debug\DBLibrary.pdb
+C:\Users\User\documents\visual studio 2017\Projects\TestingApp\DBLibrary\obj\Debug\DBLibrary.csprojResolveAssemblyReference.cache
+E:\c#\TestingApp\testingapp\DBLibrary\bin\Debug\DBLibrary.dll.config
+E:\c#\TestingApp\testingapp\DBLibrary\bin\Debug\DBLibrary.dll
+E:\c#\TestingApp\testingapp\DBLibrary\bin\Debug\DBLibrary.pdb
+E:\c#\TestingApp\testingapp\DBLibrary\bin\Debug\EntityFramework.dll
+E:\c#\TestingApp\testingapp\DBLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\c#\TestingApp\testingapp\DBLibrary\bin\Debug\EntityFramework.xml
+E:\c#\TestingApp\testingapp\DBLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\c#\TestingApp\testingapp\DBLibrary\obj\Debug\DBLibrary.dll
+E:\c#\TestingApp\testingapp\DBLibrary\obj\Debug\DBLibrary.pdb
