@@ -49,8 +49,10 @@ namespace FormsApp.Test
                 rb = new RadioButton[listAnswers.Count];
 
                 FlowLayoutPanel fp = new FlowLayoutPanel();
+                //fp.Name = "MyPanelBest";
                 fp.Size = new Size(450, 30);
                 fp.Dock = DockStyle.Bottom;
+                fp.BackColor = Color.Red;
                 fp.FlowDirection = FlowDirection.LeftToRight;
 
                 btn = new Button();
@@ -62,26 +64,26 @@ namespace FormsApp.Test
                 {
                     int count = 0;
                     gb[i] = new GroupBox();
+                    gb[i].Tag = question_text_id[i].Id;
                     gb[i].Margin = new Padding(8);
                     gb[i].Text = question_text_id[i].Text;
                     gb[i].AutoSize = true;
                     gb[i].AutoSizeMode = AutoSizeMode.GrowAndShrink;
 
+                    int top = 30;
                     for (int j = 0; j < listAnswers.Count; j++)
                     {
-                        int top = 30;
-
                         rb[j] = new RadioButton();
                         rb[j].Text = listAnswers[j].Text;
                         rb[j].Tag = listAnswers[j].IsTrue;
                         rb[j].AutoSize = true;
                         rb[j].Checked = false;
-                        rb[j].CheckedChanged += new EventHandler(Radio_Checked);
+                        //rb[j].CheckedChanged += new EventHandler(Radio_Checked);
 
                         if (listAnswers[j].QuestionId == question_text_id[i].Id)
                         {
                             count++;
-                            if (count > 1)
+                            if (j >=1)
                             {
                                 top += 30;
                             }
@@ -100,47 +102,83 @@ namespace FormsApp.Test
             }
         }
 
-        private void Radio_Checked(object sender, EventArgs e)
-        {
-            RadioButton rb = sender as RadioButton;
-            if(rb.Checked)
-            {
-                if((bool)rb.Tag == true)
-                {
-                    right_answers++;
-                }
-                else
-                {
-                    wrong_answers++;
-                }
-            }
-        }
+        //private void Radio_Checked(object sender, EventArgs e)
+        //{
+        //    RadioButton rb = sender as RadioButton;
+        //    if(rb.Checked)
+        //    {
+        //        if((bool)rb.Tag == true)
+        //        {
+        //            right_answers++;
+        //        }
+        //        else
+        //        {
+        //            wrong_answers++;
+        //        }
+        //    }
+        //}
 
         private void EndTestClick(object sender, EventArgs e)
         {
-            MessageBox.Show($"Шановний {user.Login}!\n Ви закінчили проходження тесту!\n\n Правильних відповідей: {right_answers}. Неправильних: {wrong_answers}");
 
-            using (TestingAppEntities context = new TestingAppEntities())
+            int countIsTrue = 0;
+            foreach (var gb in flowLayoutPanel1.Controls)
             {
-                try
+                if(gb is GroupBox)
                 {
-                    context.Results.Add(new Result
+                    GroupBox currGB = gb as GroupBox;
+                    //Зайшо на питання
+                    bool answerIs = false;
+                    foreach (var r in currGB.Controls)
                     {
-                        CountRightAnswers = right_answers,
-                        CountWrongAnswers = wrong_answers,
-                        CategoryId = selected_id,
-                        UserId = user.Id
-                    });
-
-                    context.SaveChanges();
+                        if(r is RadioButton)
+                        {
+                            RadioButton radio = r as RadioButton;
+                            if((bool)radio.Tag)
+                            {
+                                if (radio.Checked)
+                                {
+                                    answerIs = true;
+                                }
+                                else
+                                {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    if(answerIs)
+                    {
+                        countIsTrue++;
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
+                
             }
+            MessageBox.Show("Правильних відповідей " + countIsTrue.ToString());
+            //this.Con MyPanelBest
+            //MessageBox.Show($"Шановний {user.Login}!\n Ви закінчили проходження тесту!\n\n Правильних відповідей: {right_answers}. Неправильних: {wrong_answers}");
 
-            this.Close();
+            //using (TestingAppEntities context = new TestingAppEntities())
+            //{
+            //    try
+            //    {
+            //        context.Results.Add(new Result
+            //        {
+            //            CountRightAnswers = right_answers,
+            //            CountWrongAnswers = wrong_answers,
+            //            CategoryId = selected_id,
+            //            UserId = user.Id
+            //        });
+
+            //        context.SaveChanges();
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show(ex.ToString());
+            //    }
+            //}
+
+            //this.Close();
         }
     }
 }

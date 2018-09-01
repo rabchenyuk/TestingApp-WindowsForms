@@ -60,3 +60,28 @@ E:\c#\TestingApp\testingapp\FormsApp\obj\Debug\FormsApp.Test.StartTestForm.resou
 E:\c#\TestingApp\testingapp\FormsApp\obj\Debug\FormsApp.Test.TestingProcessForm.resources
 E:\c#\TestingApp\testingapp\FormsApp\obj\Debug\FormsApp.Administrator.AddAnswersForm.resources
 E:\c#\TestingApp\testingapp\FormsApp\obj\Debug\FormsApp.Administrator.AddQuestionsForm.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\FormsApp.exe.config
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\FormsApp.exe
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\FormsApp.pdb
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\EntityFramework.dll
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\DBLibrary.pdb
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\DBLibrary.dll.config
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\EntityFramework.xml
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.csprojAssemblyReference.cache
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.Administrator.AddAnswersForm.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.Administrator.AddQuestionsForm.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.Administrator.AdminForm.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.Administrator.CreateTestForm.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.Authorization.AuthForm.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.Properties.Resources.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.Authorization.RegForm.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.Test.StartTestForm.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.Test.TestingProcessForm.resources
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.csproj.GenerateResource.cache
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.csproj.CoreCompileInputs.cache
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.csproj.CopyComplete
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.exe
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\obj\Debug\FormsApp.pdb
+D:\New folder (2)\TestingApp-WindowsForms\FormsApp\bin\Debug\DBLibrary.dll

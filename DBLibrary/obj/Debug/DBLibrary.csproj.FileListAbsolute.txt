@@ -17,3 +17,15 @@ E:\c#\TestingApp\testingapp\DBLibrary\bin\Debug\EntityFramework.xml
 E:\c#\TestingApp\testingapp\DBLibrary\bin\Debug\EntityFramework.SqlServer.xml
 E:\c#\TestingApp\testingapp\DBLibrary\obj\Debug\DBLibrary.dll
 E:\c#\TestingApp\testingapp\DBLibrary\obj\Debug\DBLibrary.pdb
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\bin\Debug\DBLibrary.dll.config
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\bin\Debug\DBLibrary.dll
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\bin\Debug\DBLibrary.pdb
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.dll
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.xml
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\obj\Debug\DBLibrary.csproj.CoreCompileInputs.cache
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\obj\Debug\DBLibrary.csproj.CopyComplete
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\obj\Debug\DBLibrary.dll
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\obj\Debug\DBLibrary.pdb
+D:\New folder (2)\TestingApp-WindowsForms\DBLibrary\obj\Debug\DBLibrary.csprojAssemblyReference.cache
