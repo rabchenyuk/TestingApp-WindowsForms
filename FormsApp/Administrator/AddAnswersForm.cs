@@ -25,7 +25,7 @@ namespace FormsApp.Administrator
                 selectListCategory.DataSource = category;
                 selectListCategory.DisplayMember = "TestName";
 
-                var question = context.Questions.ToList();
+                var question = context.Questions.Where(q => q.CategoryId == 1).ToList();
                 selectListQuestion.DataSource = question;
                 selectListQuestion.DisplayMember = "Text";
             }
@@ -66,7 +66,7 @@ namespace FormsApp.Administrator
 
                         MessageBox.Show("Додано");
 
-                        textBoxAnswer.Text = string.Empty;
+                        this.Close();
                     }
                     catch (Exception ex)
                     {
@@ -84,6 +84,18 @@ namespace FormsApp.Administrator
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             radio2_checked = true;
+        }
+
+        private void selectListCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selected_id = Convert.ToInt32(selectListCategory.SelectedItem.ToString());
+
+            using (TestingAppEntities context = new TestingAppEntities())
+            {
+                var question = context.Questions.Where(q => q.CategoryId == selected_id).ToList();
+                selectListQuestion.DataSource = question;
+                selectListQuestion.DisplayMember = "Text";
+            }
         }
     }
 }

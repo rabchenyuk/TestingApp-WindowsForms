@@ -118,6 +118,7 @@
             this.selectListCategory.Name = "selectListCategory";
             this.selectListCategory.Size = new System.Drawing.Size(341, 32);
             this.selectListCategory.TabIndex = 13;
+            this.selectListCategory.SelectedIndexChanged += new System.EventHandler(this.selectListCategory_SelectedIndexChanged);
             // 
             // selectListQuestion
             // 

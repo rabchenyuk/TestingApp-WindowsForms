@@ -23,8 +23,6 @@ namespace FormsApp.Administrator
                 var test = context.Categories.ToList();
                 selectList.DataSource = test;
                 selectList.DisplayMember = "TestName";
-
-                //selectList.ValueMember = "Id";
             }
         }
 

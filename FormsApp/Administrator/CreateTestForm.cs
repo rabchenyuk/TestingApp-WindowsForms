@@ -75,6 +75,8 @@ namespace FormsApp.Administrator
                             textBoxTestName.Text = string.Empty;
                             textBoxQuestion.Text = string.Empty;
                             textBoxAnswer.Text = string.Empty;
+
+                            this.Close();
                         }
                         catch (Exception ex)
                         {

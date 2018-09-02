@@ -16,8 +16,6 @@ namespace FormsApp.Test
         private Button btn;
         private RadioButton[] rb;
         private List<Answer> listAnswers;
-        private int right_answers = 0;
-        private int wrong_answers = 0;
 
         public TestingProcessForm(int _selected_id, User _user)
         {
@@ -49,10 +47,8 @@ namespace FormsApp.Test
                 rb = new RadioButton[listAnswers.Count];
 
                 FlowLayoutPanel fp = new FlowLayoutPanel();
-                //fp.Name = "MyPanelBest";
                 fp.Size = new Size(450, 30);
                 fp.Dock = DockStyle.Bottom;
-                fp.BackColor = Color.Red;
                 fp.FlowDirection = FlowDirection.LeftToRight;
 
                 btn = new Button();
@@ -78,12 +74,11 @@ namespace FormsApp.Test
                         rb[j].Tag = listAnswers[j].IsTrue;
                         rb[j].AutoSize = true;
                         rb[j].Checked = false;
-                        //rb[j].CheckedChanged += new EventHandler(Radio_Checked);
 
                         if (listAnswers[j].QuestionId == question_text_id[i].Id)
                         {
                             count++;
-                            if (j >=1)
+                            if (count > 1)
                             {
                                 top += 30;
                             }
@@ -102,32 +97,16 @@ namespace FormsApp.Test
             }
         }
 
-        //private void Radio_Checked(object sender, EventArgs e)
-        //{
-        //    RadioButton rb = sender as RadioButton;
-        //    if(rb.Checked)
-        //    {
-        //        if((bool)rb.Tag == true)
-        //        {
-        //            right_answers++;
-        //        }
-        //        else
-        //        {
-        //            wrong_answers++;
-        //        }
-        //    }
-        //}
-
         private void EndTestClick(object sender, EventArgs e)
         {
+            int right_answers = 0;
+            int wrong_answers = 0;
 
-            int countIsTrue = 0;
             foreach (var gb in flowLayoutPanel1.Controls)
             {
                 if(gb is GroupBox)
                 {
                     GroupBox currGB = gb as GroupBox;
-                    //Зайшо на питання
                     bool answerIs = false;
                     foreach (var r in currGB.Controls)
                     {
@@ -149,36 +128,39 @@ namespace FormsApp.Test
                     }
                     if(answerIs)
                     {
-                        countIsTrue++;
+                        right_answers++;
+                    }
+                    else
+                    {
+                        wrong_answers++;
                     }
                 }
                 
             }
-            MessageBox.Show("Правильних відповідей " + countIsTrue.ToString());
-            //this.Con MyPanelBest
-            //MessageBox.Show($"Шановний {user.Login}!\n Ви закінчили проходження тесту!\n\n Правильних відповідей: {right_answers}. Неправильних: {wrong_answers}");
 
-            //using (TestingAppEntities context = new TestingAppEntities())
-            //{
-            //    try
-            //    {
-            //        context.Results.Add(new Result
-            //        {
-            //            CountRightAnswers = right_answers,
-            //            CountWrongAnswers = wrong_answers,
-            //            CategoryId = selected_id,
-            //            UserId = user.Id
-            //        });
+            MessageBox.Show($"Шановний {user.Login}!\n Ви закінчили проходження тесту!\n\n Правильних відповідей: {right_answers}. Неправильних: {wrong_answers}");
 
-            //        context.SaveChanges();
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.ToString());
-            //    }
-            //}
+            using (TestingAppEntities context = new TestingAppEntities())
+            {
+                try
+                {
+                    context.Results.Add(new Result
+                    {
+                        CountRightAnswers = right_answers,
+                        CountWrongAnswers = wrong_answers,
+                        CategoryId = selected_id,
+                        UserId = user.Id
+                    });
 
-            //this.Close();
+                    context.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+
+            this.Close();
         }
     }
 }
