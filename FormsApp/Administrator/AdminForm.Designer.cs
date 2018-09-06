@@ -59,7 +59,7 @@
             this.selectList.Size = new System.Drawing.Size(341, 32);
             this.selectList.TabIndex = 0;
             this.selectList.SelectedIndexChanged += new System.EventHandler(this.selectList_SelectedIndexChanged);
-            this.selectList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectList_MouseClick);
+            //this.selectList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectList_MouseClick);
             // 
             // label1
             // 

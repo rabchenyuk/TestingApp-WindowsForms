@@ -13,9 +13,13 @@ namespace FormsApp.Administrator
         private bool radio1_checked = false;
         private bool radio2_checked = false;
 
-        public CreateTestForm()
+        AdminForm admin;
+
+        public CreateTestForm(AdminForm a)
         {
             InitializeComponent();
+
+            admin = a;
         }
 
         private void buttonCreate_Click(object sender, EventArgs e)
@@ -75,6 +79,8 @@ namespace FormsApp.Administrator
                             textBoxTestName.Text = string.Empty;
                             textBoxQuestion.Text = string.Empty;
                             textBoxAnswer.Text = string.Empty;
+
+                            admin.SelectLoadAfterAddNewCategory();
 
                             this.Close();
                         }

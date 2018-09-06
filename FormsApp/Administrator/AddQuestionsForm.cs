@@ -12,10 +12,12 @@ namespace FormsApp.Administrator
         private bool radio = false;
         private bool radio1_checked = false;
         private bool radio2_checked = false;
+        private AdminForm admin;
 
-        public AddQuestionsForm()
+        public AddQuestionsForm(AdminForm a)
         {
             InitializeComponent();
+            admin = a;
         }
 
         private void AddTestForm_Load(object sender, EventArgs e)
@@ -75,6 +77,8 @@ namespace FormsApp.Administrator
                         
                         textBoxQuestion.Text = string.Empty;
                         textBoxAnswer.Text = string.Empty;
+
+                        admin.QuestionsLoadAfterAddNew();
 
                         this.Close();
                     }

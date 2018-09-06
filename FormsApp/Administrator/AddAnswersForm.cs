@@ -11,10 +11,12 @@ namespace FormsApp.Administrator
         private bool radio = false;
         private bool radio1_checked = false;
         private bool radio2_checked = false;
+        private AdminForm admin;
 
-        public AddAnswersForm()
+        public AddAnswersForm(AdminForm a)
         {
             InitializeComponent();
+            admin = a;
         }
 
         private void AddAnswersForm_Load(object sender, EventArgs e)
@@ -65,6 +67,8 @@ namespace FormsApp.Administrator
                         context.SaveChanges();
 
                         MessageBox.Show("Додано");
+
+                        admin.AnswersLoadAfterAddNew(curr_select_id);
 
                         this.Close();
                     }

@@ -16,8 +16,20 @@ namespace FormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            /// <summary>
+            /// Entry point
+            /// </summary>
             Application.Run(new AuthForm());
+
+            /// <summary>
+            /// Admin part point for debug and exploration
+            /// </summary>
             //Application.Run(new AdminForm());
+
+            /// <summary>
+            /// Test part point for debug and exploration
+            /// </summary>
             //Application.Run(new StartTestForm());
         }
     }

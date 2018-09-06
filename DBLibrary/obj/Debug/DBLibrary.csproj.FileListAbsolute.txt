@@ -38,3 +38,12 @@ E:\c#\App\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.xml
 E:\c#\App\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.SqlServer.xml
 E:\c#\App\TestingApp-WindowsForms\DBLibrary\obj\Debug\DBLibrary.dll
 E:\c#\App\TestingApp-WindowsForms\DBLibrary\obj\Debug\DBLibrary.pdb
+E:\Programming\WinForms(TestingApp)\TestingApp-WindowsForms\TestingApp-WindowsForms\DBLibrary\bin\Debug\DBLibrary.dll.config
+E:\Programming\WinForms(TestingApp)\TestingApp-WindowsForms\TestingApp-WindowsForms\DBLibrary\bin\Debug\DBLibrary.dll
+E:\Programming\WinForms(TestingApp)\TestingApp-WindowsForms\TestingApp-WindowsForms\DBLibrary\bin\Debug\DBLibrary.pdb
+E:\Programming\WinForms(TestingApp)\TestingApp-WindowsForms\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.dll
+E:\Programming\WinForms(TestingApp)\TestingApp-WindowsForms\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\Programming\WinForms(TestingApp)\TestingApp-WindowsForms\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.xml
+E:\Programming\WinForms(TestingApp)\TestingApp-WindowsForms\TestingApp-WindowsForms\DBLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\Programming\WinForms(TestingApp)\TestingApp-WindowsForms\TestingApp-WindowsForms\DBLibrary\obj\Debug\DBLibrary.dll
+E:\Programming\WinForms(TestingApp)\TestingApp-WindowsForms\TestingApp-WindowsForms\DBLibrary\obj\Debug\DBLibrary.pdb
